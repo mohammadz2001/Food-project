@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Web</title>
+    <link rel="icon" type="image.svg" href="images/icon/burger-hamburger-food-svgrepo-com.svg">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/grid.css">
+    <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body class="body">
+
+
+
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="header-top-logo">
+
+                    <svg class="header-top-logo__img" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="32" height="32" fill="url(#pattern0)"/>
+                        <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_8_93" transform="scale(0.015625)"/>
+                        </pattern>
+                        <image id="image0_8_93" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAACRwAAAkcB0xsw9QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAATGSURBVHic7ZtriFVVFMd/6zijOTX2UrljNpIhgY8aMh8FPoI+hM6YEEIP6EOQlfZF6EX2gCBQCpJSoiAoCorAyqKoL4UkBdHYRMRYQWkPNawobtfGqZnVh73P3H1v93Xuuefsg3P/sLmce87e67/+++x911rnXFFVJjM60jQmIn3AGmClbT3O6QLwJfA5MAjsU9V84qRUNdEGBMBG4ACgEVoeeBboS5KfJLkEROQG4FFgQdmpUeBb4Jht04Be2+ZUGOp54G5V/aPlJBOa9U5gN6UzehJ4DrgOOKtG38XAE8Dxsv5HgYGWc03A+R5Kb/dR4BlgTsRxOqxY3ztjjQG3ZlYA4FzgO4fwD8DymGOeDbzmjDkObM2cAIAAbztEPwRmtnD8zcApZ/z+rAlwv0NuqNY6j2HjdsfGL8DsTAgAXA7862xWc1vtvGPrBUeEfVkR4BWH1KaknLe2pts7LLS3wqsAwFzgH0vmoySdd2yudQR4ybcAOxwyq9IQwNr9xto8FWcvqBsJisgMoB8YAOYDFwBddq3/BFwJzHDWfirZlYjcC+y0h3ngDMzP7kGnDarqbzUHqqFwJyaMHaGx2H1PWrNv+c3GBFm1OI0ADwNTIy0BYCHwWYUBfwfeB97FRGjj9vu/SThpqcJzKzAMHC5rY2W8h4HVdQXABDPbrENh5/eAm4AFFQh0AZcCvWk7X0eYecBjmETLjSCfrCfAI06HPLDZtzMxhegEbsbUGkK/tlQUwM5kuKY+Bub7dqCFQqy2Exr+aiwrEQCTeQ3aC44B5/kmnYAIVwF/Wh8Phz6GJ7c7t8gG32QTFGHA8fMp+x3nU8yyYkVVWW92kx+2vh5RVQJgHTAVgwc4jaFGhaftYa+IXBZgojyAE6r6ox9qqeJFzF4A0B8Al9iDL/zwSReqWgD228OBAMjZgyE/lLwgzFcuCjCJDJhEYrJhSoDZFQGW+GTiCRpg0kaA5T6ZpIxz7OchV4DFItLliVBqEJF5wCp7eNAVYAomZj7dcRvmeSWYMj7TgCOYnfFrYHqLoq5lwB5goe8I0OHUgalcKfCBajEX2EAxRt7VAkPXUKwpvOrbcYeXm/OsnBDAnnyDYuFgbQwjayjNv2/07bjltc3h9ObE984FF1LMmfPAFjBF0whGNgF/OYbu8e245XWXw6kALPqfAPbC68tmbz8VSmEVDFyMKZ25dbgdGXB8BfAyxdrlUeCKkmsqdFoEHHIcOQm8DjyIyRxzQDdwNXCfPefWEEeBhzw5HGAez98CfFo2IUNUeGRXbaBuSh9Jl7fxKt8P4ac6vAT4iupl8reo8rC23sDrMG91/FxDjBFMqfxOoNPTzO+sMknvANfW2ssaNSDA0jJDn2De4DjTh9Nl/HY5vB4H1gOzGuob0VAuS5tcFQFyUfqGIeGkRVsA3wR8oy2AbwK+0RbANwHfaAvgm4BvtAXwTcA34vxlpk9E7mgZk3ho+qFOpH+MiEgO8wZJltGjqscbvbi9BGL03Y15FS0L2I4pfEZGHAEKUW61JCEihWb7Tvol0BbANwHfiLMHrLc/i1nA0mY7Ro0DZgInmjWWEmap6q+NXhxpCdiB90amlB72RnEeIt4BE51EujEvVGQJY9rEv83/A9XBz3NU/qG5AAAAAElFTkSuQmCC"/>
+                        </defs>
+                    </svg>
+                    <p class="header-top-logo__title">FOO</p>
+                        
+                </div>
+                <nav class="header-top-nav">
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Menu</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Contact</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Shop</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header-top-search-box">
+                    <form class="search-box__input-wrapper" action="#">
+                        <a href="#" class="search-logo__link">
+                            <svg class="search-box__search-logo" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 19L14.65 14.65M17 9C17 13.4183 13.4183 17 9 17C4.58172 17 1 13.4183 1 9C1 4.58172 4.58172 1 9 1C13.4183 1 17 4.58172 17 9Z" stroke="#909090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <input type="text" class="search-box__input" placeholder="Search">
+                      
+                    </form>
+
+                   
+
+                    <div class="search-box__basket-wrapper">
+                        <svg class="search-box__line" width="1" height="45" viewBox="0 0 1 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="0.5" y1="2.18557e-08" x2="0.499998" y2="45" stroke="#948C8C" stroke-opacity="0.31"/>
+                        </svg>
+                        <a class="basket-logo__link" href="basket.html">
+                            <svg class="search-box__basket-logo" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_7_71)">
+                                <path d="M5.83331 15C4.91665 15 4.17498 15.75 4.17498 16.6667C4.17498 17.5833 4.91665 18.3333 5.83331 18.3333C6.74998 18.3333 7.49998 17.5833 7.49998 16.6667C7.49998 15.75 6.74998 15 5.83331 15ZM0.833313 1.66666V3.33332H2.49998L5.49998 9.65832L4.37498 11.7C4.24165 11.9333 4.16665 12.2083 4.16665 12.5C4.16665 13.4167 4.91665 14.1667 5.83331 14.1667H15.8333V12.5H6.18331C6.06665 12.5 5.97498 12.4083 5.97498 12.2917L5.99998 12.1917L6.74998 10.8333H12.9583C13.5833 10.8333 14.1333 10.4917 14.4166 9.97499L17.4 4.56666C17.4666 4.44999 17.5 4.30832 17.5 4.16666C17.5 3.70832 17.125 3.33332 16.6666 3.33332H4.34165L3.55831 1.66666H0.833313ZM14.1666 15C13.25 15 12.5083 15.75 12.5083 16.6667C12.5083 17.5833 13.25 18.3333 14.1666 18.3333C15.0833 18.3333 15.8333 17.5833 15.8333 16.6667C15.8333 15.75 15.0833 15 14.1666 15Z" fill="#909090"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_7_71">
+                                <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <sup class="basket-count">0</sup>
+
+                    </div>
+
+                   
+
+                </div>
+
+                <div class="nav__btn">
+                    <span class="nav__btn-line"></span>
+                </div>
+
+              
+
+            </div>
+
+            <nav class="new-nav">
+                <ul class="new-menu">
+                    <li class="new-menu__item">
+                        <a href="" class="new-menu__link">Home</a>
+                    </li>
+                    <li class="new-menu__item">
+                        <a href="" class="new-menu__link">Menu</a>
+                    </li>
+                    <li class="new-menu__item">
+                        <a href="" class="new-menu__link">Contact</a>
+                    </li>
+                    <li class="new-menu__item">
+                        <a href="" class="new-menu__link">Shop</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <div class="header-bottom">
+                <div class="header-caption">
+                    <img class="header-caption__arrow" src="images/icon/flesh.svg" alt="">
+                    <div class="header-caption__title-wrapper">
+                        <h2 class="header-caption__first-title">Fast</h2>
+                        <h1 class="header-caption__second-title">Food<br>Delivery</h1>
+                    </div>
+                    
+                    <p class="header-caption__description">Sed ut perspiciatis unde omnis iste natus sit <br>
+                        voluptatem accusantium doloremque laudantium
+                    </p>
+                    <div class="header-caption__links-wrapper">
+                        <a class="header-caption__order-link" href="#">Order Now</a>
+                        <a class="header-caption__video-logo-wrapper" href="#">
+                            <img class="header-caption__video-logo" src="images/icon/play.svg" alt="">
+                        </a>
+                        <a class="header-caption__video-link" href="#">  Watch Video </a>
+                    </div>
+
+                    <div class="header-caption__score">
+
+                        <img class="header-five-stars" src="images/icon/stars-svgrepo-com.svg" alt="">
+                        <p class="header-score__text">5 Star Rating</p>
+                        <span class="header-score__info">based on 1788 reviews</span>
+
+                    </div>
+
+
+                </div>
+                <div class="header-bottom__logo-wrapper">
+                    <img class="header-bottom__logo" src="images/asli.svg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="popular">
+            <div class="container">
+                <div class="popular-today">
+                    <div class="popular-left-wrapper">
+                        <h3 class="popular-left__title">Todays Trending Food</h3>
+                        <p class="popular-left__text">Peoples loves it most the past week</p>
+                        <img class="popular-left__img" src="images/ch2.jpg" alt="">
+                    </div>
+                    <div class="popular-right-wrapper">
+                        <h1 class="popular-right__title">Fried Chicken</h1>
+                        <p class="popular-right__price">$1,350</p>
+                        <div class="popular-right__starstext-wrapper">
+                            <div class="popular-right__stars-wrapper">
+                                <svg class="popular-right__star one" fill="#000000" width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                    <polygon points="8 11.43 3.67 14 4.84 9.19 1 5.97 6.05 5.57 8 1 9.95 5.57 15 5.97 11.15 9.19 12.33 14 8 11.43"/>
+                                    </g>
+                                </svg>
+                                <svg class="popular-right__star two" fill="#000000" width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                    <polygon points="8 11.43 3.67 14 4.84 9.19 1 5.97 6.05 5.57 8 1 9.95 5.57 15 5.97 11.15 9.19 12.33 14 8 11.43"/>
+                                    </g>
+                                </svg>
+                                <svg class="popular-right__star three" fill="#000000" width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                    <polygon points="8 11.43 3.67 14 4.84 9.19 1 5.97 6.05 5.57 8 1 9.95 5.57 15 5.97 11.15 9.19 12.33 14 8 11.43"/>
+                                    </g>
+                                </svg>
+                                <svg class="popular-right__star four" fill="#000000" width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                    <polygon points="8 11.43 3.67 14 4.84 9.19 1 5.97 6.05 5.57 8 1 9.95 5.57 15 5.97 11.15 9.19 12.33 14 8 11.43"/>
+                                    </g>
+                                </svg>
+                                <svg class="popular-right__star five" fill="#000000" width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                    <polygon points="8 11.43 3.67 14 4.84 9.19 1 5.97 6.05 5.57 8 1 9.95 5.57 15 5.97 11.15 9.19 12.33 14 8 11.43"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <p class="starstext-wrapper__text">5.0 out of (1256)<span class="starstext-wrapper__text-span">Reviews</span></p>
+                        </div>
+                        <p class="popular-right__quantity">Select Quantity</p>
+                        <div class="popular-right__btns">
+                            <button type="button" class="star-btn">1</button>
+                            <button type="button" class="star-btn">2</button>
+                            <button type="button" class="star-btn">3</button>
+                            <button type="button" class="star-btn">4</button>
+                            <button type="button" class="star-btn">5</button>
+                        </div>
+                        <div class="popular-right__links">
+                            <button class="popular-links__like"  type="button">
+                                <svg class="popular-links__like-logo" width="60px" height="35px" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M725.333333 192c-89.6 0-168.533333 44.8-213.333333 115.2C467.2 236.8 388.266667 192 298.666667 192 157.866667 192 42.666667 307.2 42.666667 448c0 253.866667 469.333333 512 469.333333 512s469.333333-256 469.333333-512c0-140.8-115.2-256-256-256z" fill="#f6b1b8b2"  />
+                                </svg>
+                            </button>
+                            <button data-id="9" class="popular-links__basket add-btn" type="button">
+                                <svg data-id="9" class="popular-links__basket-logo" width="54" height="33" viewBox="0 0 54 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.791 4.99116L13.154 5.96943H14.1974H46.4265C48.0568 5.96943 49.321 6.34325 50.3034 7.00529C51.2144 7.61921 51.5211 8.21808 51.5555 8.82011L45.8193 17.0177L45.745 17.1239L45.69 17.2412C45.459 17.7342 44.9824 18.2418 44.0565 18.6957C43.1397 19.1449 42.1076 19.3806 40.9341 19.3806H18.7571H16.683L17.3326 21.3504L17.5398 21.9789L17.6156 22.2086L17.7598 22.4029C18.5576 23.4782 19.7932 23.8471 21.037 23.8471H41.9704C42.0082 23.8471 42.0447 23.8475 42.0799 23.8483C42.0449 23.8494 42.0084 23.85 41.9704 23.85H21.037C19.8019 23.85 18.7042 23.5942 17.7187 23.1009C16.7821 22.632 16.279 22.0992 16.0262 21.557L10.9805 3.79264C10.7611 2.97443 10.2317 2.34955 9.50139 1.96927C8.82352 1.61628 8.03481 1.5029 7.25414 1.5029H2.17624C2.14632 1.5029 2.11748 1.5024 2.08967 1.50145C2.11748 1.5005 2.14632 1.5 2.17624 1.5H7.25414C8.7067 1.5 9.87832 1.79451 10.8235 2.32228C11.7817 2.85727 12.2554 3.46086 12.4589 4.09193L12.4689 4.12277L12.4802 4.15314L12.791 4.99116ZM44.5483 17.257L44.5546 17.2359L49.8409 9.50628L50.2271 8.94147L50.0538 8.27952C49.8443 7.47938 49.343 6.8459 48.6216 6.45232C47.9549 6.08861 47.1826 5.97232 46.4265 5.97232H15.0264H13.0509L13.5816 7.87524L16.4832 18.2806L16.7891 19.3777H17.9281H40.9341C41.6703 19.3777 42.4152 19.2784 43.0614 18.9674C43.7605 18.6309 44.3109 18.0569 44.5483 17.257ZM25.0294 29.8195C25.0294 30.0354 24.9595 30.3257 24.3958 30.7055C23.8247 31.0904 23.0772 31.3224 22.0733 31.3224C21.158 31.3224 20.4395 31.0998 19.8545 30.7055C19.2908 30.3257 19.2208 30.0354 19.2208 29.8195C19.2208 29.6035 19.2908 29.3133 19.8545 28.9334C20.4395 28.5392 21.158 28.3166 22.0733 28.3166C23.0772 28.3166 23.8247 28.5486 24.3958 28.9334C24.9595 29.3133 25.0294 29.6035 25.0294 29.8195ZM42.7502 29.8195C42.7502 30.0355 42.6803 30.3257 42.1166 30.7055C41.5455 31.0904 40.798 31.3224 39.7941 31.3224C38.7902 31.3224 38.0428 31.0904 37.4716 30.7055C36.908 30.3257 36.838 30.0355 36.838 29.8195C36.838 29.6035 36.908 29.3133 37.4717 28.9334C38.0428 28.5486 38.7902 28.3166 39.7941 28.3166C40.798 28.3166 41.5455 28.5486 42.1166 28.9334C42.6803 29.3133 42.7502 29.6035 42.7502 29.8195Z" stroke="#FEBB41" stroke-width="3"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="products">
+            <div class="container">
+                <div class="products-wrapper">
+                    <h5 class="products__title">Popular Items</h5>
+                    <h3 class="products__text">Most Ordered Items </h3>
+                    <div class="row items">
+
+                        <div class="col-md-4 col-xl-3">
+                            <div class="products-item">
+                                <span class="products-item__img-off" >8% OFF</span>
+                                <img class="products-item__img" src="images/coffee-brain-caffeine-neuroscincces.webp" alt="">
+                                <h1 class="products-item__title">Coffee</h1>
+                                <p class="products-item__description">Coffee is a beverage prepared from roasted coffee beans. Darkly colored, bitter, and
+                                     slightly acidic, coffee has a stimulating effect on humans
+                                </p>
+                                <div class="products-item__price-wrapper">
+                                    <span class="products-item__old-price">1200$</span>
+                                    <span class="products-item__off-price">1100$</span>
+                                </div>
+                                <button data-id="1" class="products-item__btn add-btn" type="button">+ ADD</button>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-xl-3">
+                            <div class="products-item">
+                                <span class="products-item__img-off" >16% OFF</span>
+                                <img class="products-item__img" src="images/Kufteh-Tabrizi.jpg" alt="">
+                                <h1 class="products-item__title">Cofte Tabrizi</h1>
+                                <p class="products-item__description">koofteh Tabrizi, are a variety of Iranian meatballs from the city of Tabriz. The dish normally consists of a large meatball including rice,yellow split peas,and
+                                     <span class="more">More...</span>
+                                     <span class="more-info">
+                                        its juice which is served in a separate dish with shredded
+                                        sangak or lavash bread before the main course
+                                     </span>
+                                     <span class="close-more">Close...</span>
+                                </p>
+                                <div class="products-item__price-wrapper">
+                                    <span class="products-item__old-price">1800$</span>
+                                    <span class="products-item__off-price">1500$</span>
+                                </div>
+                                <button data-id="2" class="products-item__btn add-btn" type="button">+ ADD</button>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-xl-3">
+                            <div class="products-item">
+                                <span class="products-item__img-off" >12% OFF</span>
+                                <img class="products-item__img" src="images/berger.jpg" alt="">
+                                <h1 class="products-item__title">Berger</h1>
+                                <p class="products-item__description">The French surname is an occupational name for a shepherd,
+                                     from Old French bergier (Late Latin berbicarius, from berbex 'ram')
+                                </p>
+                                <div class="products-item__price-wrapper">
+                                    <span class="products-item__old-price">1600$</span>
+                                    <span class="products-item__off-price">1400$</span>
+                                </div>
+                                <button data-id="3" class="products-item__btn add-btn" type="button">+ ADD</button>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-xl-3">
+                            <div class="products-item">
+                                <span class="products-item__img-off" >5% OFF</span>
+                                <img class="products-item__img" src="images/Gheimeh-bademjan2.jpg" alt="">
+                                <h1 class="products-item__title">Gheime</h1>
+                                <p class="products-item__description">Gheimeh or Qeimeh is an Iranian stew (khoresh) consisting of diced mutton, tomatoes, split peas, onion and dried lime, garnished with golden thinly
+                                     <span class="more">More...</span>
+                                     <span class="more-info">
+                                        sliced crispy potatoes. The stew is sometimes garnished with
+                                        fried eggplant and is usually served with white rice
+                                     </span>
+                                     <span class="close-more">Close...</span>
+                                </p>
+                                <div class="products-item__price-wrapper">
+                                    <span class="products-item__old-price">2000$</span>
+                                    <span class="products-item__off-price">1900$</span>
+                                </div>
+                                <button data-id="4" class="products-item__btn add-btn" type="button">+ ADD</button>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-xl-3">
+                            <div class="products-item">
+                                <span class="products-item__img-off" >4% OFF</span>
+                                <img class="products-item__img" src="images/kebab.jpg" alt="">
+                                <h1 class="products-item__title">Kabab koobideh</h1>
+                                <p class="products-item__description">Kabab koobideh or Kobide is an Iranian type of kofta kabab made from ground lamb or beef,
+                                    often mixed with ground pepper and chopped onions
+                                </p>
+                                <div class="products-item__price-wrapper">
+                                    <span class="products-item__old-price">2500$</span>
+                                    <span class="products-item__off-price">2400$</span>
+                                </div>
+                                <button data-id="5" class="products-item__btn add-btn" type="button">+ ADD</button>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-xl-3">
+                            <div class="products-item">
+                                <span class="products-item__img-off" >15% OFF</span>
+                                <img class="products-item__img" src="images/jooje.jpg" alt="">
+                                <h1 class="products-item__title">Jujeh Kebab</h1>
+                                <p class="products-item__description">Jujeh kabab is an Iranian dish that consists of grilled chunks of chicken which are sometimes with bone and other times without bone.It is one of the common
+                                     <span class="more">More...</span>
+                                     <span class="more-info">
+                                        and popular dishes of Iran.It is common to marinate the chunks
+                                        in minced onion, lemon juice and saffron
+                                     </span>
+                                     <span class="close-more">Close...</span>
+                                </p>
+                                <div class="products-item__price-wrapper">
+                                    <span class="products-item__old-price">1200$</span>
+                                    <span class="products-item__off-price">1100$</span>
+                                </div>
+                                <button data-id="6" class="products-item__btn add-btn" type="button">+ ADD</button>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-xl-3">
+                            <div class="products-item">
+                                <span class="products-item__img-off" >7% OFF</span>
+                                <img class="products-item__img" src="images/ghormeh-sabzi.jpg" alt="">
+                                <h1 class="products-item__title">Ghormeh sabzi</h1>
+                                <p class="products-item__description">Ghormeh sabzi or Khoresht sabzi, also spelled qormeh sabzi, is an Iranian herb stew. It is considered the national dish and is a very popular dish in Iran.
+                                     <span class="more">More...</span>
+                                     <span class="more-info">
+                                        Ghormeh sabzi has different variants, which are based on the
+                                        difference between beans and meat
+                                     </span>
+                                     <span class="close-more">Close...</span>
+                                </p>
+                                <div class="products-item__price-wrapper">
+                                    <span class="products-item__old-price">2700$</span>
+                                    <span class="products-item__off-price">2500$</span>
+                                </div>
+                                <button data-id="7" class="products-item__btn add-btn" type="button">+ ADD</button>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-xl-3">
+                            <div class="products-item">
+                                <span class="products-item__img-off" >20% OFF</span>
+                                <img class="products-item__img last-item" src="images/icecream.jpg" alt="">
+                                <h1 class="products-item__title">Ice-craem</h1>
+                                <p class="products-item__description">Ice cream is a frozen dessert typically made from
+                                     milk or cream that has been flavoured with a sweetener either sugar or an alternative
+                                </p>
+                                <div class="products-item__price-wrapper">
+                                    <span class="products-item__old-price">1500$</span>
+                                    <span class="products-item__off-price">1200$</span>
+                                </div>
+                                <button data-id="8" class="products-item__btn add-btn" type="button">+ ADD</button>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="login">
+            <div class="container">
+                <div class="login-wrapper">
+                    <div class="login-left">
+                        <h4 class="login-left__title">Contact us</h4>
+                        <p class="login-left__text">Need an experienced and skilled hand with custom IT projects? <br>
+                            Fill out the form to get a free consultation.
+                        </p>
+                        <form class="login-form" action="#">
+                            <input class="input1 login-form__input" type="text" placeholder="Your Company Name">
+                            <span class="sp1 in_sp"></span>
+                            <input class="input2 login-form__input" type="text" placeholder="Nature of Bussiness">
+                            <span class="sp2 in_sp"></span>
+                            <div class="input-wrapper">
+                                <div class="address-wrapper">
+                                    <input class="input3 login-form__input" type="text" placeholder="Address">
+                                    <span class="sp3 in_sp"></span>
+                                </div>
+                                <div class="postcode-wrapper">
+                                    <input class="input4 login-form__input" type="text" maxlength="10" placeholder="Postcode">
+                                    <span class="sp4 in_sp"></span>
+                                </div>
+                            </div>
+                            <input class="input5 login-form__input" type="text" placeholder="Contact name">
+                            <span class="sp5 in_sp"></span>
+                            <input class="input6 login-form__input" type="text" maxlength="11" placeholder="Contact Phone">
+                            <span class="sp6 in_sp"></span>
+                            <input class="input7 login-form__input" type="text" placeholder="email@gmail">
+                            <span class="sp7 in_sp"></span>
+                            <div class="check-wrapper">
+                                <input class="check-input" type="checkbox">
+                                <p class="check__text">
+                                    I want to protect my data by signing an NDA
+                                </p>
+                            </div>
+                            <button class="login-form__submit-btn" type="submit">Submit</button>
+                        </form>
+
+                    </div>
+
+
+                    <div class="login-right">
+                        <h3 class="login-right__title">Offices</h3>
+                        <p class="login-right__text">United States <br>
+                            500 5th Avenue Suite 400, NY 10110
+                        </p>
+                        <p class="login-right__text">United Kingdom <br>
+                            High St, Bromley BR1 1DN
+                        </p>
+                        <p class="login-right__text">France <br>
+                            80 avenue des Terroirs de France, Paris
+                        </p>
+                        <img class="login-right__logo" src="images/nemone.svg" alt="map">
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+    <footer class="footer">
+            <div class="container">
+                <div class="footer-wrapper">
+                    <div class="footer-logo">
+                        <img class="footer-logo__img" src="images/icon/Shape-icon.svg" alt="">
+                        <button class="scroll-btn" type="button">
+                            <svg class="scroll-btn__logo" width="80px" height="80px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--emojione" preserveAspectRatio="xMidYMid meet"><circle cx="32" cy="32" r="30" fill="#4fd1d9"></circle><path fill="#ffffff" d="M48 30.3L32 15L16 30.3h10.6V49h10.3V30.3z"></path></svg>
+                        </button>
+                    </div>
+                    <div class="footer-content">
+                        <div class="content__newsletter">
+                            <h3 class="newsletter__title">Subscribe to our <br>
+                                newsletter</h3>
+                            <form class="newsletter__form" action="#">
+                                <input class="newsletter__input" type="text" placeholder="Email address">
+                                <button class="newsletter__input-btn" type="submit">
+                                    <svg class="newsletter__input-logo" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z" fill="#0F0F0F"/>
+                                    </svg>
+                                </button>
+                            </form>
+                            <span class="newsletter__span"></span>
+                        </div>
+                        <div class="content__links">
+
+                            <ul class="content-links__wrapper">
+                                <li class="content__item">
+                                    <a class="content__link" href="#">Services</a>
+                                </li>
+                                <li class="content__item">
+                                    <a class="content__link" href="#">Email Marketing</a>
+                                </li>
+                                <li class="content__item">
+                                    <a class="content__link" href="#">Campaigns</a>
+                                </li>
+                                <li class="content__item">
+                                    <a class="content__link" href="#">Branding</a>
+                                </li>
+                                <li class="content__item">
+                                    <a class="content__link" href="#">Offline</a>
+                                </li>
+                            </ul>
+
+                            <ul class="content-links__wrapper">
+                                <li class="content__item">
+                                    <a class="content__link about-link" href="#">About</a>
+                                </li>
+                                <li class="content__item">
+                                    <a class="content__link" href="#">Our Story</a>
+                                </li>
+                                <li class="content__item">
+                                    <a class="content__link" href="#">Benefits</a>
+                                </li>
+                                <li class="content__item">
+                                    <a class="content__link" href="#">Team</a>
+                                </li>
+                                <li class="content__item">
+                                    <a class="content__link" href="#">Careers</a>
+                                </li>
+                            </ul>
+
+                            <ul class="content-links__wrapper">
+                                <li class="content__item">
+                                    <a class="content__link" href="#">Help</a>
+                                </li>
+                                <li class="content__item">
+                                    <a class="content__link" href="#">FAQs</a>
+                                </li>
+                                <li class="content__item">
+                                    <a class="content__link" href="#">Contact Us</a>
+                                </li>
+
+                        </div>
+
+                    </div>
+                    <div class="footer-end">
+                        <div class="end-condition-privacy">
+                            <a class="conditions" href="#">Terms & Conditions</a>
+                            <a class="privacy" href="#">Privacy Policy</a>
+                        </div>
+                        
+                        <div class="end-socials">
+                            <a class="facebook-link" target="_blank" href="https://www.facebook.com">
+                                <svg class="facebook-img" fill="#fff" height="25px" width="25px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	                            viewBox="-337 273 123.5 256" xml:space="preserve">
+                                <path d="M-260.9,327.8c0-10.3,9.2-14,19.5-14c10.3,0,21.3,3.2,21.3,3.2l6.6-39.2c0,0-14-4.8-47.4-4.8c-20.5,0-32.4,7.8-41.1,19.3
+	                            c-8.2,10.9-8.5,28.4-8.5,39.7v25.7H-337V396h26.5v133h49.6V396h39.3l2.9-38.3h-42.2V327.8z"/>
+                            </svg>
+                            </a>
+                            <a class="instagram-link" target="_blank" href="https://www.instagram.com">
+                                <svg class="instagram-img" fill="#fff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	                                width="25px" height="25px" viewBox="0 0 169.063 169.063"
+	                                xml:space="preserve">
+                                    <g>
+	                                <path d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752
+		                                c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407
+		                                c0,17.455-14.201,31.655-31.656,31.655H46.654C29.2,154.063,15,139.862,15,122.407V46.655C15,29.201,29.2,15,46.654,15h75.752
+		                                c17.455,0,31.656,14.201,31.656,31.655V122.407z"/>
+	                                <path d="M84.531,40.97c-24.021,0-43.563,19.542-43.563,43.563c0,24.02,19.542,43.561,43.563,43.561s43.563-19.541,43.563-43.561
+		                                C128.094,60.512,108.552,40.97,84.531,40.97z M84.531,113.093c-15.749,0-28.563-12.812-28.563-28.561
+		                                c0-15.75,12.813-28.563,28.563-28.563s28.563,12.813,28.563,28.563C113.094,100.281,100.28,113.093,84.531,113.093z"/>
+	                                <path d="M129.921,28.251c-2.89,0-5.729,1.17-7.77,3.22c-2.051,2.04-3.23,4.88-3.23,7.78c0,2.891,1.18,5.73,3.23,7.78
+		                                c2.04,2.04,4.88,3.22,7.77,3.22c2.9,0,5.73-1.18,7.78-3.22c2.05-2.05,3.22-4.89,3.22-7.78c0-2.9-1.17-5.74-3.22-7.78
+		                                C135.661,29.421,132.821,28.251,129.921,28.251z"/>
+                                    </g>
+                                </svg> 
+                            </a>
+                            <a class="twitter-link" target="_blank" href="https://www.twitter.com">
+                                <svg class="twitter-img" fill="#fff" width="25px" height="25px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1920 311.856c-70.701 33.769-146.598 56.47-226.221 66.86 81.317-52.517 143.774-135.529 173.252-234.691-76.236 48.678-160.716 84.028-250.391 103.002-71.718-82.56-174.268-134.06-287.435-134.06-217.75 0-394.165 189.966-394.165 424.206 0 33.318 3.614 65.619 10.165 96.678C617.9 616.119 327.304 447.385 133.045 190.67c-33.77 62.57-53.309 135.53-53.309 213.233 0 147.162 91.031 276.818 196.744 353.054-64.602-2.26-157.101-21.46-157.101-53.309v5.648c0 205.327 114.41 376.658 294.55 415.849-32.978 9.487-78.38 14.795-114.409 14.795-25.412 0-55.454-2.71-79.624-7.793 50.26 168.509 193.13 291.163 365.478 294.777-134.852 113.506-306.07 181.383-490.616 181.383-31.85 0-64.038-2.033-94.758-5.873 174.494 120.17 381.176 190.532 603.67 190.532 724.97 0 1121.055-646.136 1121.055-1206.55 0-18.41-.452-36.932-1.356-55.116 77.026-59.746 143.887-134.4 196.631-219.444" fill-rule="evenodd"/>
+                                </svg>
+                            </a>
+
+
+                     
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="notif"></div>     
+               
+                
+            </div>
+        
+    </footer>
+
+
+
+
+
+    <script src="scripts/app.js"></script>
+    
+</body>
+</html>

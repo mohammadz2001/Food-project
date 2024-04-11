@@ -1,0 +1,21 @@
+{
+  "posts": [],
+  "inputs_infos": [
+    {
+      "CompanyName": "mohammad",
+      "Nature_Of_Business": "2015",
+      "Address": "zanjan-garmab",
+      "Postcode": "5454545255",
+      "Contact_Name": "zanjani",
+      "Phone": "09303308959",
+      "Email": "mohammadzanjani2040@gmail.com",
+      "id": 1
+    }
+  ],
+  "news": [
+    {
+      "Email": "mohammadzanjani2040@gmail.com",
+      "id": 1
+    }
+  ]
+}
